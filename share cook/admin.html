@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(backGround.png); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color:lavender;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        legend {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #333;
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:active {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    
+    <form method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend align="center">
+                <h2>Add Exclusive Product</h2>
+            </legend>
+            <label for="productname">Product Name</label>
+            <input type="text" id="productname" name="name" placeholder="Enter your Product Name" required>
+            <label for="Image">Image</label>
+            <input type="file" id="Image" name="image">
+            <button formaction="admin.php">ADD CupCake</button>
+            <br></br>
+            <button formaction="admin1.php">ADD Waffles</button>
+            <br></br>
+            <button formaction="admin2.php">ADD Cakes</button>
+            <br></br>
+            
+            <button formaction="admin3.php">ADD Muffins</button>
+            
+        </fieldset>
+    </form>
+</body>
+</html>

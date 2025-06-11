@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="addrecipe.css">
+</head>
+<body>
+    <div class="signform">
+        <form method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend align="center">
+                    <h2>Add Recipe </h2>
+                </legend>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="name" placeholder="Enter your Full Name" required >
+                <label for="recipe title">Recipe Title </label>
+                <input type="text" id="title" name="title" placeholder="Enter Recipe Title" required>
+                <label for="recipe Ingrident">Recipe ingrident </label>
+                <textarea name="summary" id="recipe discription">Enter Recipe Ingrident</textarea>
+                <label for="img">Image</label>
+                <input type="file" id="UImage" name="img" placeholder="Enter Product image">
+                <div>
+                <button formaction="addrecipe.php">Sumbit</button>
+            </div>
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
